@@ -1,0 +1,71 @@
+//热文推荐
+.sidebar{
+    margin-top:40px;
+    .good_article,.img_article,.hot_click,.search,.my_music{width:310px; background: rgb(34,34,34);
+        margin-top:20px; padding-bottom:15px;
+    }
+    .good_article li,.hot_click li{padding-left:10px; margin-top: 5px; white-space:nowrap; 
+        text-overflow:ellipsis; overflow:hidden;}
+    .good_article h3,.img_article h3,.hot_click h3{padding:15px 0px 0px 10px; text-shadow:5px 4px 1px #000;}
+    .good_article i{  width:250px; font-style: normal; font-size: 12px;transition:ease-in-out 1s;}
+    .good_article span{color:rgb(63,62,60); padding-right:7px; font-weight: bold; font-size:16px;}
+    .good_article li:first-child span{color:#f8490b;}
+    .good_article li:first-child span b{font-size:25px;}
+    .good_article li:nth-child(2) span{color:rgb(185,185,185);}
+    .good_article li:nth-child(2) span b{font-size:23px;}
+    .good_article li:nth-child(3) span{color:rgb(185,185,185);}
+    .good_article li:nth-child(3) span b{font-size:21px;}
+    
+    //图文并茂
+    .img_article img{width:75px; height:55px; float:left; padding:10px 10px 5px 10px;}
+    .img_article p{padding-top:8px; width:192px; transition:1s;}
+    .img_talk_3{
+        background: url(assets/img/icons.png) no-repeat; 
+        width:15px;
+        height:15px;
+        display:inline-block; padding-right:3px;
+    }
+    .img_talk_1{.img_talk_3}
+    .img_talk_2{.img_talk_3}
+    .img_talk_1{background-position: 0px -263px;}
+    .img_talk_2{background-position: 0px -282px;}
+    .img_talk_3{background-position: 0px -301px;}
+    
+    //最热点击
+    .hot_click li span{color:rgb(63,62,60); font-size: 12px; font-weight: bold;}
+    .hot_click ul{margin-top:15px;}
+    .hot_click .hot_text{width:210px; font-style: normal; font-size: 12px;
+        transition:ease-in-out 1s; color:rgb(185,185,185)}
+    
+    .search_text{
+        border: solid 1px rgba(0,0,0,0.8); 
+        width:200px; height:30px; 
+        margin:25px 20px 10px 35px;
+       background: rgb(63,62,60) url(assets/img/icons.png) no-repeat; 
+        border-radius:2px; 
+        background-position:6px -318px; 
+        padding-left:30px; 
+        color:rgb(185,185,185)}
+    
+    //音乐
+    .my_music{position:relative; height: 150px;}
+    .icon_img{width:100px; height: 85px; float:left; margin:10px 0px 0px 20px;
+     background: url(assets/img/vinyl.png) center right no-repeat; 
+     position: relative;}
+    .icon_img img{width:78px; height:85px; position:absolute; top:0px; left: 0px;}
+    .icon_song b,.icon_artist b,.icon_album b,.icon_like b{
+        background: url(assets/img/icons.png) no-repeat; 
+        width:15px; height:15px; display: inline-block; padding-right:3px;}
+    .icon_song{padding: 10px 0px 0px 130px;}
+    .icon_artist{padding: 5px 0px 0px 145px;}
+    .icon_album{padding: 5px 0px 0px 160px;}
+    .icon_like{position: absolute; bottom:50px; left:20px; color:#B5783E;}	
+    .icon_song b{background-position: 0px -347px;}
+    .icon_artist b{background-position: -16px -347px;}
+    .icon_album b{background-position: -32px -347px;}
+    .icon_like b{background-position: 0px -301px;}
+    
+    .music{width:270px; height:30px; position: absolute; bottom:10px; left:20px;}
+    .music audio{width:270px; height:30px; border-radius: 5px;}
+}
+
