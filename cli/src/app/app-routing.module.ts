@@ -4,7 +4,8 @@ import {ArticleListComponent} from "./article-list/article-list.component";
 import { from } from 'rxjs';
 
 const routes: Routes = [
-  { path: 'articlelist', component: ArticleListComponent },];
+  { path: 'articlelist', component: ArticleListComponent },
+  { path: '',   redirectTo: '/articlelist', pathMatch: 'full' },];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

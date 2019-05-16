@@ -47,6 +47,7 @@ var __decorate = (undefined && undefined.__decorate) || function (decorators, ta
 
 var routes = [
     { path: 'articlelist', component: _article_list_article_list_component__WEBPACK_IMPORTED_MODULE_2__["ArticleListComponent"] },
+    { path: '', redirectTo: '/articlelist', pathMatch: 'full' },
 ];
 var AppRoutingModule = /** @class */ (function () {
     function AppRoutingModule() {
@@ -383,7 +384,7 @@ var FooterComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<header class=\"head\">\n    <div class=\"comwidth\">\n    <a href=\"#/\">博客首页</a>\n    <a href=\"#/write\">心情随写</a>\n    <a href=\"#/work\">工作经历</a>\n    <a href=\"#/project\">我的项目</a>\n    <a href=\"#/example\">js实例</a>\n    <a href=\"#/skill\">我的技能</a> \n    <a href=\"#/record\">学习笔录</a>\n    </div>\n  </header>\n"
+module.exports = "<header class=\"head\">\n    <div class=\"comwidth\">\n    <a routerLink=\"/articlelist\">博客首页</a>\n    <a href=\"#/write\">心情随写</a>\n    <a href=\"#/work\">工作经历</a>\n    <a href=\"#/project\">我的项目</a>\n    <a href=\"#/example\">js实例</a>\n    <a href=\"#/skill\">我的技能</a> \n    <a href=\"#/record\">学习笔录</a>\n    </div>\n  </header>\n"
 
 /***/ }),
 
