@@ -14,6 +14,111 @@ body{
     .deep_green{color:rgb(0,102,102);}
     .comwidth{width:1000px; margin:0 auto;}
     .radius{border-radius:6px; border-top:#000 solid 1px; border-bottom:rgb(70,70,71) solid 1px; }
-    .main{margin-top:50px;}
+    
+    //文章列表样式
+    .article_list{width:666px; border-right:rgb(23,23,23) solid 2px; margin-top:40px;}
+    .article_box{padding:20px 0px 20px 0px; position:relative;}
+    .article{width:630px; height:201px;  background: rgb(34,34,34)}
+    .ti{width:0px; height:0px; position:absolute; top:44px; right:12px;
+        border-top:0px transparent solid; 
+        border-bottom: 20px transparent solid; 
+        border-left:24px solid rgb(23,23,23);}
+    .ci{width:10px;height:10px; border-radius:50%; background: #000; position:absolute; top:40px; right:-5px;}
+    .article h4{margin:15px 0px 0px 20px; font-size:16px; transition:1s;}
+    .article_context img{margin:14px 0px 0px 25px; float: left; width:165px; height:100px;}
+    .article_context>p{margin:12px 0px 0px 25px; width:400px; float: left; letter-spacing:2px; line-height: 20px;}
+    .article_footer{width:630px; height:25px; background: rgb(23,23,23); position:absolute; bottom:21px; left:0px;
+    border-radius:0px 0px 6px 6px; color:rgb(63,62,60);}
+    .article_time b,.article_talk b,.article_zan b{background:url(assets/img/icons.png) no-repeat;
+        width: 17px; height: 17px;
+    display: inline-block; margin-right:2px; }
+    .article_talk b{ background-position: 0px -220px; }
+    .article_zan b{ background-position: 0px -240px;}
+    .article_time b{ background-position: 0px -202px;}
+    .article_talk{margin-right:20px;}
+    .article_zan{margin-right:30px;}
+    .article_time{margin-left:10px;}
+    //文章详情列表
+    .article_detail{
+        width:630px;
+        background: rgb(34,34,34);
+        padding:20px 20px 40px 20px;
+        box-sizing: border-box;
+    }
+    .article-detail-box h4{
+        margin:15px 0px 0px 20px; 
+        font-size:16px; 
+        transition:1s;
+        padding-top:20px;
+    }
+    .article-detail-box{
+        width:100%;
+        background:#fff;
+    }
+    //面包屑
+    .crumbs{
+        span{
+            display: inline-block;
+            height: 32px;
+            line-height: 32px;
+            position:relative;
+            padding:0px 20px;
+            text-align: center;
+            margin-right: 22px;
+        }
+        span:nth-child(1){
+            background: #fff;
+            color:#000;
+        }
+        span:nth-child(2){
+            background:orange;
+            color:#fff;
+        }
+        span:nth-child(1)::after{
+            position:absolute;
+            width: 0px;
+            height: 0px;
+            display: block;
+            border-left:#fff solid 16px;
+            border-right:transparent solid 16px;
+            border-top:transparent solid 16px;
+            border-bottom:transparent solid 16px;
+            right:-32px;
+            top:0px;
+            z-index:2;
+            content:"",
+        }
+        span:nth-child(2)::after{
+            position:absolute;
+            right:-32px;
+            top:0px;
+            width: 0px;
+            height: 0px;
+            display: block;
+            border-left:orange solid 16px;
+            border-right:transparent solid 16px;
+            border-top:transparent solid 16px;
+            border-bottom:transparent solid 16px;
+            z-index:2;
+            content:"",
+            
+        }
+        span:nth-child(2)::before{
+            position:absolute;
+            left:-16px;
+            top:0px;
+            width: 0px;
+            height: 0px;
+            display: block;
+            border-left:transparent solid 16px;
+            border-top:orange solid 16px;
+            border-bottom:orange solid 16px; 
+            z-index:1;
+            content:"",
+            
+        }
+    }
+   
+  
 }
 *{margin:0; padding:0;} 

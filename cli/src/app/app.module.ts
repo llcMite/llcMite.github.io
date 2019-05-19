@@ -3,11 +3,14 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './header/header.component';
-import { FooterComponent } from './footer/footer.component';
-import { RightbarComponent } from './rightbar/rightbar.component';
-import { BannerComponent } from './banner/banner.component';
-import { ArticleListComponent } from './article-list/article-list.component';
+import { HeaderComponent } from './components/common/header/header.component';
+import { FooterComponent } from './components/common/footer/footer.component';
+import { RightbarComponent } from './components/common/rightbar/rightbar.component';
+import { BannerComponent } from './components/common/banner/banner.component';
+import { ArticleListComponent } from './components/business/article-list/article-list.component';
+import { ScoreComponent } from './components/business/score/score.component';
+
+import {VqueryService} from "./services/vquery.service";
 
 @NgModule({
   declarations: [
@@ -16,13 +19,14 @@ import { ArticleListComponent } from './article-list/article-list.component';
     FooterComponent,
     RightbarComponent,
     BannerComponent,
-    ArticleListComponent
+    ArticleListComponent,
+    ScoreComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [VqueryService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,12 +1,73 @@
 //热文推荐
 .sidebar{
     margin-top:40px;
-    .good_article,.img_article,.hot_click,.search,.my_music{width:310px; background: rgb(34,34,34);
+    .common-tab-box{
+        width:310px; 
+        background: rgb(34,34,34);
+        margin-top:20px; 
+        padding-bottom:15px;
+    }
+    .search,.my_music{width:310px; background: rgb(34,34,34);
         margin-top:20px; padding-bottom:15px;
     }
+   
+    
+    .sidebar-tab-box{
+        width: 100%;
+        height: 32px;
+        line-height: 32px;
+        box-sizing: border-box;
+        padding: 0px 10px 0px 10px;
+        span{
+          display: inline-block;
+          margin: 5px 0px 0px 10px;
+          padding-left:5px;
+          text-shadow: 5px 4px 1px #000;   
+          position:relative;   
+          text-align: center;
+          font-size:14px;
+          font-weight: bold;
+          letter-spacing: 1px;
+          cursor: pointer;
+        }
+        // span:hover,
+        span.active{
+            transition:0.3s;
+            color:rgb(255,153,0);
+            border-bottom: solid rgb(rgb(255,153,0)) 1px;
+        }
+        span::before{
+            transition:0.1s;
+            border-top:solid rgb(255,153,0) 5px;
+            border-left:solid transparent 5px;
+            border-right:solid transparent 5px;
+            border-bottom:solid transparent 5px;
+            position:absolute;
+            bottom:-12px;
+            left:50%;
+            transform: translateX(-50%);
+            display: block;  
+            width:0px;
+            height: 0px;
+            opacity:0;
+            content:" ",
+        }
+        // span:hover::before,
+        span.active::before{
+            transition:0.1s;
+            opacity:1;
+        }
+    }
+    .good_article,.img_article,.hot_click{
+        box-sizing:border-box;
+        width: 100%;
+        padding:15px 10px 15px 10px;
+
+    }
+    //推荐文章
+    
     .good_article li,.hot_click li{padding-left:10px; margin-top: 5px; white-space:nowrap; 
         text-overflow:ellipsis; overflow:hidden;}
-    .good_article h3,.img_article h3,.hot_click h3{padding:15px 0px 0px 10px; text-shadow:5px 4px 1px #000;}
     .good_article i{  width:250px; font-style: normal; font-size: 12px;transition:ease-in-out 1s;}
     .good_article span{color:rgb(63,62,60); padding-right:7px; font-weight: bold; font-size:16px;}
     .good_article li:first-child span{color:#f8490b;}
@@ -15,7 +76,6 @@
     .good_article li:nth-child(2) span b{font-size:23px;}
     .good_article li:nth-child(3) span{color:rgb(185,185,185);}
     .good_article li:nth-child(3) span b{font-size:21px;}
-    
     //图文并茂
     .img_article img{width:75px; height:55px; float:left; padding:10px 10px 5px 10px;}
     .img_article p{padding-top:8px; width:192px; transition:1s;}

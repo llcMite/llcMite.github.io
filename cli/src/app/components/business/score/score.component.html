@@ -1,0 +1,37 @@
+     
+<ul class="article_list fl">
+<li class="article_box">
+    <div class="article_detail radius">
+      <section class="crumbs">
+        <span>文章列表</span>
+        <span>滑动星星评分</span>
+      </section>
+      
+      <div class="article-detail-box clearfix">
+          <h4>滑动星星评分</h4>
+        <div class="score-box">
+           <ul class="star-box clearfix">
+             <li><i class="high"></i><i class="nohigh"></i></li>
+             <li><i class="high"></i><i class="nohigh"></i></li>
+             <li><i class="high"></i><i class="nohigh"></i></li>
+             <li><i class="high"></i><i class="nohigh"></i></li>
+             <li><i class="high"></i><i class="nohigh"></i></li>
+           </ul>
+           <p>{{selectScore}}分</p>
+           <div class="submit-button">
+             <a (click)="cancelScore()">取消评分</a>
+             <a (click)="submitScore()">确认</a>
+           </div>
+        </div>
+      </div>
+      <div class="article_footer">
+      <span class="article_time fl"><b></b>2013-8-7</span>
+      <span class="article_talk fr"><b></b>34</span>
+      <span class="article_zan fr"><b></b>10</span>
+    </div>
+    
+    </div>
+    <div class='ti'></div>
+    <div class='ci'></div>           
+</li>
+</ul>

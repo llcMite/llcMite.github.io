@@ -8,8 +8,12 @@ import { Component, OnInit } from '@angular/core';
 export class RightbarComponent implements OnInit {
 
   constructor() { }
-
+  tab:string
   ngOnInit() {
+    this.tab="recommend";
+  }
+  tabClick(tab:string){
+    this.tab=tab;
   }
 
 }
